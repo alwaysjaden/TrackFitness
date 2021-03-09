@@ -41,6 +41,6 @@ Using Javascript, and Thrid-Party APIs, and Server Side API to develop Weather A
 # Contact
     Jaden Lee : alwaysjaden@gmail.com
     Project Link: https://github.com/alwaysjaden/TrackFitness
-    Published Github Page : 
+    Published Github Page : https://safe-stream-11204.herokuapp.com/ [ currently not functioning]
 
 
