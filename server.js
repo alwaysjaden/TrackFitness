@@ -31,13 +31,13 @@ mongoose.connect(
 
 
 
-//use routes
-// app.use(require("./routes/API.js"));
-// app.use(require("./routes/views.js"));
+// use routes
+app.use(require("./routes/API.js"));
+app.use(require("./routes/views.js"));
 
 
-require('./routes/API.js')(app)
-require('./routes/views.js')(app)
+// require('./routes/API.js')(app)
+// require('./routes/views.js')(app)
 
 
 
