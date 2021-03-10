@@ -17,17 +17,17 @@ app.use(express.json());
 //use static files
 app.use(express.static("public"));
 
-// mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {useNewUrlParser: true});
+mongoose.connect(process.env.MONGO_DB_URI || "mongodb://localhost/workout", {useNewUrlParser: true});
 
-mongoose.connect(
-    process.env.MONGODB_URI || 'mongodb://localhost/workout',
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      useCreateIndex: true,
-      useFindAndModify: false
-    }
-  );
+// mongoose.connect(
+//     process.env.MONGODB_URI || 'mongodb://localhost/workout',
+//     {
+//       useNewUrlParser: true,
+//       useUnifiedTopology: true,
+//       useCreateIndex: true,
+//       useFindAndModify: false
+//     }
+//   );
 
 
 
