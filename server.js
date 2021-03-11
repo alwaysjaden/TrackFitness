@@ -40,12 +40,12 @@ mongoose.connect(
 
 
 // use routes
-// app.use(require("./routes/API"));
-// app.use(require("./routes/views"));
+app.use(require("./routes/API"));
+app.use(require("./routes/views"));
 
 
-require('./routes/API.js')(app)
-require('./routes/views.js')(app)
+// require('./routes/API.js')(app)
+// require('./routes/views.js')(app)
 
 
 
