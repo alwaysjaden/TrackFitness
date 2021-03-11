@@ -1,6 +1,6 @@
 //install packages
 const express = require('express');
-// const logger = require('morgan');
+const logger = require('morgan');
 const mongoose = require('mongoose');
 //set port
 const PORT = process.env.PORT || 3000;
@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 
 //use logger
-// app.use(logger("dev"));
+app.use(logger("dev"));
 
 //parser
 app.use(express.urlencoded({ extended: true }));
@@ -26,7 +26,7 @@ mongoose.connect(
         useFindAndModify: false
     });
 
-const db = require("./models")
+// const db = require("./models")
 // mongoose.connect(
 //     process.env.MONGODB_URI || 'mongodb://localhost/workout',
 //     {
