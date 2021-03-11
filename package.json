@@ -18,9 +18,13 @@
     "url": "https://github.com/alwaysjaden/TrackFitness/issues"
   },
   "homepage": "https://github.com/alwaysjaden/TrackFitness#readme",
+
   "dependencies": {
     "express": "^4.17.1",
     "mongoose": "^5.11.19",
     "morgan": "^1.10.0"
+  },
+  "engines": {
+    "node": "14.15.0"
   }
 }
