@@ -1,11 +1,18 @@
 
-const router = require("express").Router();
+// const router = require("express").Router();
 const path = require("path");
 
 
-router.get("/exercise", (req, res) => {
-  res.sendFile(path.join(__dirname, "../public/exercise.html"));
-});
+module.exports = function(app) {
+  // Route for "Continue Workout" / "New Workout" HREF in Index.html
+  app.get("/exercise", (req, res) => {
+      res.sendFile(path.join(__dirname, "../public/exercise.html"));
+  });
+  // Route for Displaying Graphs of Database Workouts etc
+  app.get("/stats", (req, res) => {
+      res.sendFile(path.join(__dirname, "../public/stats.html"));
+  });
+}
 
 
 
